@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid rgb(0, 255, 76);
+    border-style: dashed;
+    border-width: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-spacing: 5px;
+    border-left-color: chartreuse;
+    border-right-color: rgb(111, 126, 124);
+    border-bottom-color: blue;
+    border-top-color: rgb(255, 8, 0);
+  }
+  body{
+background-image: url("minecraft-shaders.jpg");
+
+  }
+
+#boton1{
+color: blue;
+background-image:url("images.png")  ;
+height: 50px;
+}
+#boton2{
+color: blue;
+background-image:url("images.png")  ;
+height: 50px;
+}
+  </style>
+</head>
+
+<body>
+<div class="container">
+	<h3 class="btn btn-primary">Introduction to p5.js</h3>
+	<hr>
+  <input id="color_name" placeholder="Intoruzca el color del filtro">
+  <br><br>
+  <button onclick="filter_tint()" id="boton1"  >Aplicar filtro</button>
+  <br><br>
+  <button onclick="take_snapshot()"  id="boton2" >Take Snapshot</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
